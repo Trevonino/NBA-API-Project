@@ -1,13 +1,6 @@
 let baseUrl = "https://trevonino.pythonanywhere.com/api/"
 testData = [];
 
-async function getAllPlayers() {
-    newURL = baseUrl + "players"
-    const response = await fetch(newURL);
-    var data = await response.json();
-    console.log(data);
-}
-
 async function searchPlayerName() {
     newURL = baseUrl + 'player?'
     fname = $('#searchFirstName').val();
