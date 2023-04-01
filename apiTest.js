@@ -13,10 +13,10 @@ async function searchPlayerName() {
         newURL += 'fname=' + fname + "&lname=" + lname;
     }
     else if (fname != '') {
-        newURL += 'fname=' + fname;
+        newURL += 'fname=' + fname + "%";
     }
     else if (lname != '') {
-        newURL += 'lname=' + lname;
+        newURL += 'lname=' + lname + "%";
     }
     $("[id^=result]").remove();
     const response = await fetch(newURL);
